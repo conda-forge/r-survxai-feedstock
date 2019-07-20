@@ -58,6 +58,7 @@ about:
     model prediction. Currently, four explanation methods are implemented.  We can divide
     them into two groups: local and global.'
   license_family: GPL
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
