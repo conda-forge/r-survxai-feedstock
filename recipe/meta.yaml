@@ -16,7 +16,7 @@ source:
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,9 +58,11 @@ about:
     model prediction. Currently, four explanation methods are implemented.  We can divide
     them into two groups: local and global.'
   license_family: GPL
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - johanneskoester
     - bgruening
     - daler
