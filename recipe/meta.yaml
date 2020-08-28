@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survxai_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survxai/survxai_{{ version }}.tar.gz
-  sha256: 10220b18ffe37021f623f9f641dc2a24c592b69fdee3151ba2b84cbd403c5327
+  sha256: 190349434519099233d576232f277f0b4cfa85b1c343e1d5fd72927282292f26
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,14 +51,10 @@ test:
 about:
   home: https://mi2datalab.github.io/survxai/
   license: GPL
-  summary: 'Survival models may have very different structures. This package contains functions  for
-    creating a unified representation of a survival models, which can be further processed
-    by various  survival explainers. Tools implemented in ''survxai'' help to understand
-    how input variables are used in  the model and what impact do they have on the final
-    model prediction. Currently, four explanation methods are implemented.  We can divide
-    them into two groups: local and global.'
+  summary: "Survival models may have very different structures. This package contains functions  for creating a unified representation of a survival models, which can be further processed by various  survival explainers. Tools implemented in 'survxai' help to understand how input variables are used in  the model and what\
+    \ impact do they have on the final model prediction. Currently, four explanation methods are implemented.  We can divide them into two groups: local and global."
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

@@ -5,7 +5,7 @@ Home: https://mi2datalab.github.io/survxai/
 
 Package license: GPL
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Survival models may have very different structures. This package contains functions  for creating a unified representation of a survival models, which can be further processed by various  survival explainers. Tools implemented in 'survxai' help to understand how input variables are used in  the model and what impact do they have on the final model prediction. Currently, four explanation methods are implemented.  We can divide them into two groups: local and global.
 
